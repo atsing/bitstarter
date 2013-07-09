@@ -4,7 +4,7 @@ var app = express.createServer(express.logger());
 
 var data = fs.readFileSync("/home/ubuntu/bitstarter/index.html", 'utf8'); 
 console.log("data", data);
-buf = new Buffer(data.js);
+buf = new Buffer(data.length);
 
 app.get('/', function(request, response) {
  // response.send('Hello World 2!');
